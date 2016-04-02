@@ -33,4 +33,4 @@ pdffigures uses std::regex, therefore compiling on Ubuntu requires g++ >= 4.9
 You might have multiple poppler.pc in your computer. On my `Ubuntu 15.10`, one was in `/usr/lib/x86_64-linux-gnu/pkgconfig/` and one was in `/usr/local/lib/pkgconfig/`. Make sure to choose the appropriate one (by adding the appropriate path to the `PKG_CONFIG_PATH` variable in your `bahrc`. ) 
 
 ### Support
-pdffigures has been tested on MAC OS X 10.9 and 10.10, Ubuntu 14.04 and 15.04, Windows is not supported.
+pdffigures has been tested on MAC OS X 10.9 and 10.10, Ubuntu 14.04, 15.04 and 15.10 (64 bit), Windows is not supported.
