@@ -6,7 +6,7 @@ ifeq ($(UNAME),Linux)
 # pkg-config setup so we need to add it in manually, this setting will work 
 # if leptonica was installed with apt-get
 	LIBS=`pkg-config --libs poppler` -llept
-	CFLAGS=-c -Wall `pkg-config --cflags poppler` -I/usr/leptonica
+	CFLAGS=-c -Wall `pkg-config --cflags poppler` -I/usr/include/leptonica
 else
 	LIBS=`pkg-config --libs poppler lept`
 	CFLAGS=-c -Wall `pkg-config --cflags poppler lept`
