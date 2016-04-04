@@ -49,7 +49,8 @@ CaptionCandidate constructCandidate(TextWord *word, int page, bool lineStart,
     return CaptionCandidate();
 
   const std::regex numberRegex = std::regex("^([0-9]+)(:|\\.)?$");
-
+  //const std::regex numberRegex = std::regex("^([0-9]+|[MDCLXVI]+)(:|\\.)?$");
+ 
   std::match_results<const char *> numberMatch;
   std::regex_match(word->getNext()->getText()->getCString(), numberMatch,
                    numberRegex);
