@@ -12,6 +12,8 @@ ifeq ($(UNAME),Linux)
 
 	LIBS=`pkg-config --libs poppler` -llept
 	CFLAGS=-c -Wall `pkg-config --cflags poppler` `pkg-config --cflags lept`
+        #LIBS= -lpoppler -llept
+        #CFLAGS=-c -Wall -I/usr/include/poppler/ -I/usr/local/include/leptonica/
 else
 	LIBS=`pkg-config --libs poppler lept`
 	CFLAGS=-c -Wall `pkg-config --cflags poppler lept`
